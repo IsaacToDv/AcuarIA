@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#071c25" />
+  <title>acuarIA — Aquarium POV</title>
+</head>
+<body>
+  <div id="stage"></div>
+  <div class="grain"></div><div class="vignette"></div><div class="crosshair"></div>
+  <header class="topbar">
+    <div class="brand"><div class="mark">≈</div><div><div class="brand-name">acuarIA</div><div class="brand-sub">AQUARIUM / POV 01</div></div></div>
+    <div class="readout"><strong id="fps">-- FPS&nbsp; / &nbsp;GPU</strong><span id="qualityReadout">WEBGPU PREFERRED · WEBGL 2 FALLBACK</span></div>
+  </header>
+  <section class="sidepanel">
+    <div class="eyebrow">Observación inmersiva · 01</div>
+    <h1 class="scene-title">Un mundo detrás del cristal</h1>
+    <p class="desc">Dentro del agua, a la altura de un pez. La habitación permanece visible al otro lado del vidrio mientras la luz atraviesa el tanque.</p>
+    <div class="panel-line"></div>
+    <div class="meta"><span>AGUA <b>26.4 °C</b></span><span>PROFUNDIDAD <b id="depthReadout">1.8 m</b></span><span>ESTADO <b>VIVO</b></span></div>
+  </section>
+  <div class="hint">ARRASTRA PARA MIRAR · WASD PARA NADAR · ESPACIO / CTRL PARA SUBIR Y BAJAR</div>
+  <div class="controls">
+    <button id="giButton" class="primary">GI híbrida · ON</button>
+    <button id="qualityButton">Calidad · Equilibrada</button>
+    <button id="resetButton">Recentrar vista</button>
+  </div>
+  <div class="loader" id="loader"><div class="loader-inner"><div class="loader-kicker">SIMULACIÓN SUBACUÁTICA</div><div class="loader-title">acuarIA</div><div class="load-track"><div class="load-bar" id="loadBar"></div></div><div class="load-note" id="loadNote">Preparando el volumen de agua…</div></div></div>
+  <div class="error" id="errorBox"></div>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
